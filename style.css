@@ -1,0 +1,12 @@
+body{
+  color: aqua;
+}
+
+h1{
+  color: bisque;
+  text-align: center;
+}
+h1:hover{
+  color: blue;
+  
+}
