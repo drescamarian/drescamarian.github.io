@@ -1,0 +1,67 @@
+
+.single__user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-top: 3em;
+}
+
+.single__user table{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3em;
+    padding: 0 20px;
+}
+
+.single__user table thead{
+    background-color: #ff0606;
+    color: #fff;
+}
+.single__user table th{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.single__user table td{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.single__user table tbody tr:nth-child(odd){
+    background-color: #f2f2f2;
+    color: #000;
+}
+.todos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3em;
+    padding: 0 20px;
+}
+.todos h2{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.todos ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.todos ul li{
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    /* border: 2px solid #ff0606; */
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.todosFinished {
+    border: 2px solid turquoise;
+}
+
+.todosUnfinished {
+    border: 2px solid #ff0606;
+}

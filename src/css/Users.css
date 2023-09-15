@@ -1,0 +1,41 @@
+.users__all {
+  margin-top: 4em;
+}
+
+.users__all h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.users__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.users__cards div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 1em;
+  margin: 1em;
+  width: 350px;
+  height: 250px;
+}
+
+.users__cards a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.4em;
+  text-decoration-color: #ff0606;
+
+  color: #ffffff;
+}
