@@ -20,7 +20,7 @@
 .comments h3{
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    /* text-decoration: underline #ff0606; */
+    text-decoration: underline #ff0606;
     text-decoration: overline ;
     text-decoration-thickness: 2px;
     text-underline-offset: 0.2em;
@@ -45,3 +45,31 @@
     font-size: 2em;
     margin-bottom: 0.5em;
 }
+
+@media screen and (max-width: 768px) {
+    .single__post{
+        width: 100%;
+        padding: 0;
+    }
+    .single__post h1{
+        font-size: 2em;
+    }
+    .single__post p{
+        font-size: 1em;
+    }
+    .single__post h2{
+        font-size: 1.5em;
+    }
+    .comments h3{
+        font-size: 1em;
+    }
+    .comments p{
+        font-size: 1em;
+    }
+    .comments{
+        width: 100%;
+        padding: 0;
+
+    }
+}
+

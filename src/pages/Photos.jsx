@@ -36,6 +36,7 @@ const Photos = () => {
       <div>
         <label htmlFor="limit">
           Limit
+        </label>
           <select
             name="limit"
             id="limit"
@@ -46,7 +47,7 @@ const Photos = () => {
             <option value="10">10</option>
             <option value="20">20</option>
           </select>
-        </label>
+        
       </div>
 
       {loading && <p>Loading...</p>}

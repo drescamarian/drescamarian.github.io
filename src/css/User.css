@@ -5,7 +5,6 @@
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 1400px;
     padding: 0 20px;
     margin-top: 20px;
     margin-top: 3em;
@@ -36,7 +35,6 @@
 }
 .todos {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     margin-top: 3em;
     padding: 0 20px;
@@ -53,9 +51,9 @@
 .todos ul li{
     margin-bottom: 1em;
     box-sizing: border-box;
-    /* border: 2px solid #ff0606; */
     padding: 1em;
     border-radius: 15px;
+    max-width: 80%;
 }
 
 .todosFinished {
@@ -64,4 +62,98 @@
 
 .todosUnfinished {
     border: 2px solid #ff0606;
+}
+
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr { 
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        width: 90%;
+    }
+    table {
+        flex-direction: row;
+        width: 100%;
+    }
+    thead {
+        flex-direction: column;
+        align-items: right;
+        width: 20%;
+    }
+    thead th {
+        align-self: start;
+        border: #000 1px solid;
+
+    }
+    tbody {
+        flex-direction: column;
+        align-items: center;
+    }
+    tr {
+        width: 90%;
+    }
+    td {
+        width: 93%;
+        border: #000 1px solid;
+    }
+    .single__user {
+        margin: 0;
+        padding: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+    .single__user div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .single__user table{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 3em;
+        padding: 0 20px;
+    }
+    .single__user table thead{
+        background-color: #ff0606;
+        color: #fff;
+    }
+    .single__user table th{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .single__user table td{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .todos{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .todos h2{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    .todos ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .todos ul li{
+        margin-bottom: 1em;
+        box-sizing: border-box;
+        padding: 1em;
+        border-radius: 15px;
+        width: 100%;
+    }
+    
 }

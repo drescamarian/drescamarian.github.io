@@ -85,3 +85,30 @@
     margin-bottom: 2em;
 }
 
+@media screen and (max-width: 768px) {
+    .photos div {
+        width: 30%;
+        min-height: 30%;
+    }
+    .limit {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    /* .photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin-top: 4em;
+    } */
+    .photo div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+}

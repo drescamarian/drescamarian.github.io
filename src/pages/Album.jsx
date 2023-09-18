@@ -32,6 +32,7 @@ const Album = () => {
       <div>
         <label htmlFor="limit">
           Limit
+        </label>
           <select
             name="limit"
             id="limit"
@@ -42,7 +43,7 @@ const Album = () => {
             <option value="16">16</option>
             <option value="20">20</option>
           </select>
-        </label>
+        
       </div>
       {loading && <p>Loading...</p>}
       {error && <p>Error...</p>}
