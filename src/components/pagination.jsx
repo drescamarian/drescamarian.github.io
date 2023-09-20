@@ -1,6 +1,8 @@
+import pagination from '../css/pagination.css';
 
 const Pagination = ({currentPage, prev, jump, next, maxPage}) => {
-    // console.log(currentPage);
+
+  
     return (
         <div className="pagination">
         {currentPage > 1 && <button onClick={() => prev()}>PREV</button>} 

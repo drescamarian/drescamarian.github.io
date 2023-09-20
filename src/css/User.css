@@ -71,31 +71,42 @@
         align-self: start;
         width: 90%;
     }
-    table {
+    .single__user table {
         flex-direction: row;
         width: 100%;
     }
-    thead {
-        flex-direction: column;
-        align-items: right;
-        width: 20%;
-    }
-    thead th {
-        align-self: start;
-        border: #000 1px solid;
 
+    .single__user table thead{
+        background-color: #ff0606;
+        color: #fff;
+        flex-direction: column;
+        /* align-items: right; */
+        width: 20%;
+        min-width: max-content;
     }
-    tbody {
+    
+    .single__user table th{
+        padding-left: 0;
+        padding-right: 0;
+        align-self: center;
+        width: 100%;
+        border: #000 1px solid;
+    }
+    .single__usert body {
         flex-direction: column;
         align-items: center;
     }
-    tr {
-        width: 90%;
+    .single__user table tr {
+        width: 100%;
     }
-    td {
-        width: 93%;
+    .single__user table td {
+        width: inherit;
         border: #000 1px solid;
+        padding-right: 0;
+        padding-left: 0;
+        text-indent: 1em;
     }
+    /* singe user */
     .single__user {
         margin: 0;
         padding: 0;
@@ -108,24 +119,18 @@
         padding: 0;
     }
 
+    .single__user div h2 {
+        text-align: center;
+    }
+
     .single__user table{
         width: 100%;
         margin: 0 auto;
         margin-top: 3em;
         padding: 0 20px;
     }
-    .single__user table thead{
-        background-color: #ff0606;
-        color: #fff;
-    }
-    .single__user table th{
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .single__user table td{
-        padding-left: 1em;
-        padding-right: 1em;
-    }
+
+   /* ToDo mobile css */
     .todos{
         width: 100%;
         margin: 0 auto;

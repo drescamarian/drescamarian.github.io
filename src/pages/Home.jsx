@@ -1,31 +1,33 @@
 import { useFetch } from "../api";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { posts, ExpandUser, Limit } from "../ApiConfig";
 import { capitalize } from "../plugIn/capitalize";
 import "../css/Home.css";
+import Limite from "../components/limit";
+import useLimit from "../assets/useLimit";
 
 function Home() {
   const LimLocalSorage = localStorage.getItem("limit");
-  const [lim, setLim] = useState(LimLocalSorage || 3);
-  const LimReadLocalStorage = localStorage.setItem("limit", lim);
-  typeof LimLocalSorage === "string" && LimLocalSorage !== "null" ? LimReadLocalStorage : setLim(3);
-  
-  const { data, loading, error } = useFetch(posts + ExpandUser + Limit + lim);
 
-  const handleSelect = (e) => {
-    setLim(e.target.value);
-  };
+  const limits = [3, 5, 10]
+  
+  const { itemsPerPage, handleLimit, setLimit } = useLimit(LimLocalSorage || 3);
+
+  const LimReadLocalStorage = localStorage.setItem("limit", itemsPerPage);
+
+  typeof LimLocalSorage === "string" && LimLocalSorage !== "null" ? LimReadLocalStorage : setLimit(3);
+
+  const { data, loading, error } = useFetch(posts + ExpandUser + Limit + itemsPerPage);
 
   return (
     <div className="home">
       <section>
         <h1>Home</h1>
-        <select onChange={(e) => handleSelect(e)} value={lim}>
-          <option value="3">3</option>
-          <option value="5">5</option>
-          <option value="10">10</option>
-        </select>
+        <Limite
+          limits={limits}
+          itemsPerPage={itemsPerPage}
+          handleLimit={handleLimit}
+        />
         <div className="posts">
           {loading && <h2>Loading...</h2>}
           {error && <h2>Error...</h2>}

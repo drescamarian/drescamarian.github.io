@@ -1,18 +1,18 @@
 .photo {
     width: 100%;
-    height: 100%;
+    height: 78.8vh;
     object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    margin-top: 4em;
+}
+.photo h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 0;
 }
 .photo div:first-child{
     border: 2px solid #000;
-}
-
-.photo div label {
-    font-size: 2.5em;
 }
 
 .photos {
@@ -71,11 +71,6 @@
     color: #fff;
 }
 
-.photo h1 {
-    font-size: 2.5em;
-    text-align: center;
-    margin-top: 0.5em;
-}
 
 .pagination {
     display: flex;
@@ -86,29 +81,39 @@
 }
 
 @media screen and (max-width: 768px) {
-    .photos div {
-        width: 30%;
-        min-height: 30%;
-    }
-    .limit {
+    .photo{
+        margin-top: 0.5em;
         width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
+        height: auto;
     }
-    /* .photo {
+    .photo h1 {
+        font-size: 1.5em;
+    }
+    .photos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5em;
+    }
+    .photos div {
+        width: 40%;
+        /* height: 40%; */
+    }
+    .photos div img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
-        cursor: pointer;
         transition: all 0.3s ease-in-out;
-        margin-top: 4em;
-    } */
-    .photo div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
     }
+    .photos div p {
+        font-size: 1em;
+        text-align: center;
+        margin-top: 0.5em;
+    }
+    
+    
+    
 }

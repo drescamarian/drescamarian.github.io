@@ -1,0 +1,39 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container .text-muted {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .container .text-muted a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer .container .text-muted a:hover {
+    text-decoration: underline #fff;
+}
+@media screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+    }
+    .container{
+        margin: 0;
+    }
+    
+}

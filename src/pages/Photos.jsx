@@ -4,13 +4,17 @@ import { Page, Limit, photos } from "../ApiConfig";
 import { capitalize } from "../plugIn/capitalize";
 import "../css/Photos.css";
 import { usePagination } from "../assets/usePagination";
-import Pagination from "../componete/pagination";
+import Pagination from "../components/pagination";
+import useLimit from "../assets/useLimit";
+import Limite from "../components/limit";
 
 const Photos = () => {
   const amount = 5000;
 
-  const [itemsPerPage, setLimit] = useState(5);
+  const limits = [6, 10, 20];
 
+  const { itemsPerPage, handleLimit } = useLimit(limits[0]); // (6)
+  
   const [currentPages, setCurrentPages] = useState(1);
 
   const { data, loading, error } = useFetch(
@@ -22,47 +26,28 @@ const Photos = () => {
     itemsPerPage
   );
 
-  const handleLimit = (e) => {
-    setLimit(e.target.value);
-  };
-
   useEffect(() => {
     setCurrentPages(currentPage);
   }, [currentPage]);
 
   return (
-    <div className="photo">
-      <h1>Photos</h1>
-      <div>
-        <label htmlFor="limit">
-          Limit
-        </label>
-          <select
-            name="limit"
-            id="limit"
-            value={itemsPerPage}
-            onChange={handleLimit}
-          >
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="20">20</option>
-          </select>
-        
+    <section>
+      <div className="photo">
+        <h1>Photos</h1>
+        <Limite limits={limits} itemsPerPage={itemsPerPage} handleLimit={handleLimit} />
+        {loading && <p>Loading...</p>}
+        {error && <p>Error...</p>}
+        {data && (
+          <div className="photos">
+            {data.map((photo) => (
+              <div key={photo.id}>
+                <img src={photo.thumbnailUrl} alt={photo.title} />
+                <p>{capitalize(photo.title)}</p>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
-
-      {loading && <p>Loading...</p>}
-      {error && <p>Error...</p>}
-      {data && (
-        <div className="photos">
-          {data.map((photo) => (
-            <div key={photo.id}>
-              <img src={photo.thumbnailUrl} alt={photo.title} />
-              <p>{capitalize(photo.title)}</p>
-            </div>
-          ))}
-        </div>
-      )}
-
       <Pagination
         next={next}
         prev={prev}
@@ -70,7 +55,7 @@ const Photos = () => {
         currentPage={currentPage}
         maxPage={maxPage}
       />
-    </div>
+    </section>
   );
 };
 

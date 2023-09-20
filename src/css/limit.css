@@ -1,0 +1,48 @@
+/* limit css  */
+.limit {
+    border-bottom: 3px solid #f1356d;
+  }
+  label {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 1em;
+  }
+  select {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #f1356d;
+    margin-right: 1em;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f1356d;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-right: 3em;
+    padding-right: 3em;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    /* limit css  */
+    .limit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 auto;
+
+  }
+    label {
+      font-size: 1.5em;
+      width: 80vw;
+    }
+    select {
+      width: 80vw;
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  }

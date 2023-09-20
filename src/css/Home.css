@@ -1,15 +1,16 @@
 .home {
-  margin-top: 4em;
   width: 100vw;
-} 
+}
+
 .home h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1em;
+  margin-top: 0;
   text-align: center;
 }
 
- .post {
+.post {
   border: 1px solid red;
   margin: 1em;
   padding: 1em;
@@ -27,16 +28,19 @@
   text-decoration-thickness: 3px;
   text-underline-offset: 0.2em;
 }
-.post span{
+
+.post span {
   display: flex;
   justify-content: space-between;
 }
-.post span a{
+
+.post span a {
   text-decoration: none;
   color: #f1356d;
   font-weight: 700;
 }
-.post span a:hover{
+
+.post span a:hover {
   color: #f1356d;
   text-decoration: underline;
   text-decoration-color: #f1356d;
@@ -44,7 +48,7 @@
   text-underline-offset: 0.2em;
 }
 
-.link__posts{
+.link__posts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,32 +56,25 @@
   margin-bottom: 5em;
 }
 
-select {
-  padding: 0.5em;
-  border-radius: 5px;
-  border: 1px solid #f1356d;
-  margin-right: 1em;
-  outline: none;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #f1356d;
-  cursor: pointer;
-  position: relative;
-  float: right;
-  margin-right: 3em;
-  padding-right: 3em;
-}
+
 
 @media screen and (max-width: 768px) {
+  .home {
+    margin-top: 0;
+    width: 100vw;
+  }
   .home h1 {
     font-size: 2rem;
   }
+
   .post {
     width: 90%;
   }
+
   .link__posts {
     flex-direction: column;
   }
+
   select {
     margin-right: 0;
     margin-bottom: 1em;
@@ -87,33 +84,38 @@ select {
 }
 
 @media screen and (max-width: 500px) {
+  .home {
+    margin-top: 0;
+    width: 100vw;
+  }
   .home h1 {
     font-size: 1.5rem;
   }
-  .post {
-    width: 90%;
+  .posts {
+    width: 100vw;
   }
-  .link__posts {
-    flex-direction: column;
-  }
-  select {
-    margin-right: 0;
-    margin-bottom: 1em;
-    float: none;
-    padding-right: 0;
-  }
-}
 
-@media screen and (max-width: 400px) {
-  .home h1 {
+  .post h2 {
     font-size: 1.2rem;
   }
+
   .post {
-    width: 90%;
+    width: 80vw;
   }
+
   .link__posts {
     flex-direction: column;
+    margin-bottom: 2em;
+    background-color: #f1356d;
+    height: 1em;
+    font-size:  3em;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.5em;
+    font-weight: 900;
   }
+
   select {
     margin-right: 0;
     margin-bottom: 1em;
