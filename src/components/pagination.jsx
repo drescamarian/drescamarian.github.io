@@ -1,4 +1,4 @@
-import pagination from '../css/pagination.css';
+import '../css/pagination.css';
 
 const Pagination = ({currentPage, prev, jump, next, maxPage}) => {
 

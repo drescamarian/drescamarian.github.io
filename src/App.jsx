@@ -12,7 +12,7 @@ import Album from './pages/Album'
 import Photos from './pages/Photos'
 import Contact from './pages/Contact'
 import About from './pages/About'
-import Resume from './pages/resume'
+// import Resume from './pages/resume'
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
           <Route path='/photos' element={<Photos />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About />} />
-          <Route path='/resume' element={<Resume />} />
+          {/* <Route path='/resume' element={<Resume />} /> */}
           <Route path='*' element={<h1 className='404'>404</h1>} />
         </Routes>
       <Footer />

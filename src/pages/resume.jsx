@@ -1,5 +1,4 @@
 import { Document, Page  } from "react-pdf";
-import React from 'react';
 
 //seting up fake worker for pdf
 import { pdfjs } from 'react-pdf';

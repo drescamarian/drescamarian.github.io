@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useFetch } from "../api";
 import { Page, Limit, photos } from "../ApiConfig";
 import { capitalize } from "../plugIn/capitalize";

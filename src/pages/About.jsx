@@ -54,7 +54,7 @@ function About() {
         </p>
         <h3>Resume</h3>
         <p>Download my resume</p>
-        <a href="/resume">Download my resume</a>
+        <a href="/assets/Lebenslauf_von_Dresca.pdf">Download my resume</a>
         <p>Or read it below</p>
         <a href="/">Try my front end skills</a>
         <a

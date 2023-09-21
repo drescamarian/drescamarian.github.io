@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-export const usePagination = ( amount, itemsPerPage, currentPages ) => {
+export const usePagination = ( amount, itemsPerPage ) => {
   const [currentPage, setCurrentPage] = useState(1);
   const maxPage = Math.ceil(amount / itemsPerPage);
   

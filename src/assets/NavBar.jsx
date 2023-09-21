@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../css/NavBar.css";
 import times from "./bars-solid.svg";
 import bars from "./circle-xmark-solid.svg";

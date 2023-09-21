@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useFetch } from "../api";
-import { albums, ExpandUser, Page, Limit } from "../ApiConfig";
+import { albums, ExpandUser, Limit } from "../ApiConfig";
 import { usePagination } from "../assets/usePagination";
 import Pagination from "../components/pagination";
 import "../css/Album.css";

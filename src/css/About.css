@@ -11,6 +11,7 @@
 .about h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    margin-top: 2em;
 }
 
 .about p {
@@ -39,19 +40,20 @@
 }
 
 .about p img {
-    width: 10%;
-    height: 10%;
+    width: 1%;
+    height: 1%;
     object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
     .about {
-        padding: 0 2rem;
+        padding: 0 ;
         height: auto;
     }
 
     .about h1 {
         font-size: 2rem;
+        margin-top: 0.5em;
     }
 
     .about p {
@@ -68,11 +70,6 @@
 
     .about ul li {
         font-size: 1rem;
-    }
-
-    .about p img {
-        width: 10%;
-        height: 10%;
     }
 
     .about p img {
