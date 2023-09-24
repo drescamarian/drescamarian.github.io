@@ -9,7 +9,7 @@ function Resume() {
     
 
   return (
-    <Document file="../assets/Lebenslauf_von_Dresca.pdf">
+    <Document file="/assets/Lebenslauf_von_Dresca.pdf">
         <Page pageNumber='1'/>
     </Document>
   )

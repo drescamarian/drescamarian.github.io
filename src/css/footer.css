@@ -1,17 +1,22 @@
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--color-surface-400);
     padding: 20px;
     text-align: center;
     font-size: 14px;
     font-weight: 300;
-    margin-top: 20px;
 }
 
 .footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 3px solid var(--color-reverse);
+    border-radius: 15px;
+    color: var(--color-reverse);
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0 10px;
+    padding: 1.5em ;
 }
 
 .footer .container .text-muted {
@@ -20,13 +25,14 @@
 }
 
 .footer .container .text-muted a {
-    color: #fff;
+    color: var(--color-reverse);
     text-decoration: none;
     margin: 0 10px;
+    
 }
 
 .footer .container .text-muted a:hover {
-    text-decoration: underline #fff;
+    text-decoration: underline var(--color-primary-100);
 }
 @media screen and (max-width: 768px) {
     .footer .container {

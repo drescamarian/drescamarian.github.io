@@ -8,6 +8,7 @@
     margin-left: 1em;
   }
   select {
+    background: var(--color-surface-400);
     padding: 0.5em;
     border-radius: 5px;
     border: 1px solid #f1356d;

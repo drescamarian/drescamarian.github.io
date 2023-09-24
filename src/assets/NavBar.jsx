@@ -19,7 +19,7 @@ function NavBar() {
           <img src={show ? bars : times} ></img>
         </div>
         <div className={show ? "navBar__menu__list" : "navBar__menu__list hide"} onClick={handleHide}>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/home">Home</NavLink>
           <NavLink to="/posts">Posts</NavLink>
           <NavLink to="/user">Users</NavLink>
           <NavLink to="/Album">Albums</NavLink>

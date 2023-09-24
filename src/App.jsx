@@ -12,7 +12,7 @@ import Album from './pages/Album'
 import Photos from './pages/Photos'
 import Contact from './pages/Contact'
 import About from './pages/About'
-// import Resume from './pages/resume'
+import Resume from './pages/resume'
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<About/>} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/user" element={<Users />} /> 
           <Route path='/posts/:postid/:userid' element={<SinglePosts />} />
@@ -28,8 +28,8 @@ function App() {
           <Route path='/user/:userid' element={<User />} />
           <Route path='/photos' element={<Photos />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/about' element={<About />} />
-          {/* <Route path='/resume' element={<Resume />} /> */}
+          <Route path='/home' element={<Home />} />
+          <Route path='/resume' element={<Resume />} />
           <Route path='*' element={<h1 className='404'>404</h1>} />
         </Routes>
       <Footer />

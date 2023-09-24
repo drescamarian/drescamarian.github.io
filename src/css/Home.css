@@ -11,7 +11,7 @@
 }
 
 .post {
-  border: 1px solid red;
+  border: 1px solid var(--color-primary-100);
   margin: 1em;
   padding: 1em;
   width: 80%;
@@ -24,7 +24,7 @@
   font-weight: 700;
   margin-bottom: 1em;
   text-decoration: underline;
-  text-decoration-color: #f1356d;
+  text-decoration-color: var(--color-primary-100);
   text-decoration-thickness: 3px;
   text-underline-offset: 0.2em;
 }
@@ -36,14 +36,14 @@
 
 .post span a {
   text-decoration: none;
-  color: #f1356d;
+  color: var(--color-primary-100);
   font-weight: 700;
 }
 
 .post span a:hover {
-  color: #f1356d;
+  color: var(--color-primary-100);
   text-decoration: underline;
-  text-decoration-color: #f1356d;
+  text-decoration-color: var(--color-primary-100);
   text-decoration-thickness: 3px;
   text-underline-offset: 0.2em;
 }
@@ -106,11 +106,11 @@
   .link__posts {
     flex-direction: column;
     margin-bottom: 2em;
-    background-color: #f1356d;
+    background-color: var(--color-primary-100);
     height: 1em;
     font-size:  3em;
     text-decoration: none;
-    color: #fff;
+    color: var(--color-surface-100);
     border-radius: 10px;
     padding: 0.5em;
     font-weight: 900;

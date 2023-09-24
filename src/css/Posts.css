@@ -15,9 +15,9 @@
     color: #fff;
 }
 
-.container {
+.posts .container {
     width: 95vw;
-    border: 2px solid #fff;
+    border: 3px solid #ff0606;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 1em;
@@ -26,7 +26,8 @@
     margin-left: 2.5vw;
 }
 
-.container h2 {
+.posts .container h2 {
+    color: var(--color-reverse);
     text-align: center;
     margin-bottom: 1em;
     text-decoration: underline;
@@ -35,8 +36,15 @@
     text-decoration-color: #ff0606;
 }
 
+.posts .container p {
+    color: var(--color-reverse);
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.2em;
+}
+
 @media screen and (max-width: 768px) {
-    .container {
+    .posts .container {
         width: 90vw;
         margin-left: 5vw;
     }

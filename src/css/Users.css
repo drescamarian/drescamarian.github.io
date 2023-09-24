@@ -1,3 +1,5 @@
+
+
 .users__all {
   width: 100%;
   min-height: 88vh;
@@ -25,7 +27,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 4px solid #ff0606;
   border-radius: 15px;
   padding: 1em;
   margin: 1em;
@@ -35,11 +37,10 @@
 
 .users__cards a {
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 4px;
   text-underline-offset: 0.4em;
   text-decoration-color: #ff0606;
-
-  color: #ffffff;
+  color: var(--color-reverse);
 }
 
 @media screen and (max-width: 768px) {

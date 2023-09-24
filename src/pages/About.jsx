@@ -54,18 +54,13 @@ function About() {
         </p>
         <h3>Resume</h3>
         <p>Download my resume</p>
-        <a href="/assets/Lebenslauf_von_Dresca.pdf">Download my resume</a>
+        <a href="/assets/Lebenslauf_von_Dresca.pdf">HERE !!!</a>
         <p>Or read it below</p>
-        <a href="/">Try my front end skills</a>
-        <a
-          href="https://replit.com/@drescamarian/SimpleQuiz?s=app"
-          target="blank"
-        >
-          Try my console game
-        </a>
-        <a href="https://github.com/drescamarian" target="blank">
-          For future projects ...
-        </a>
+        <ul>
+          <li><a href="/home">Try my front end skills</a></li>
+          <li><a href="https://replit.com/@drescamarian/SimpleQuiz?s=app" target="_blank" >Try my console game</a></li>
+          <li><a href="https://github.com/drescamarian" target="_blank">For future projects ...</a></li>
+        </ul>
       </div>
     </section>
   );

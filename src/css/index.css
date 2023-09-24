@@ -2,10 +2,30 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --color-reverse: #000000;
+  /** CSS light THEME PRIMARY COLORS */
+  --color-primary-100: #f1356d;
+  --color-primary-200: #f6557c;
+  --color-primary-300: #fa6f8b;
+  --color-primary-400: #fe859b;
+  --color-primary-500: #ff9bab;
+  --color-primary-600: #ffafbb;
+  /** CSS light THEME SURFACE COLORS */
+  --color-surface-100: #ffffff;
+  --color-surface-200: #ffffff;
+  --color-surface-300: #ffffff;
+  --color-surface-400: #ffffff;
+  --color-surface-500: #ffffff;
+  --color-surface-600: #ffffff;
+  /** CSS light THEME MIXED SURFACE COLORS */
+  --color-surface-mixed-100: #ffb8c1;
+  --color-surface-mixed-200: #ffc0c8;
+  --color-surface-mixed-300: #ffc8ce;
+  --color-surface-mixed-400: #ffd0d5;
+  --color-surface-mixed-500: #ffd8dc;
+  --color-surface-mixed-600: #ffe0e3;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,19 +40,36 @@ body {
   margin: 0;
   min-width: 100vw;
   min-height: 100vh;
+  background-color: var(--color-surface-400);
 }
 
-@media (prefers-color-scheme: light) {
+
+
+@media (prefers-color-scheme: dark) {
   :root {
-      color: #395a77;
-      background-color: #ffffff;
+    --color-reverse: #ffffff;
+    /** CSS DARK THEME PRIMARY COLORS */
+    --color-primary-100: #f1356d;
+    --color-primary-200: #f6557c;
+    --color-primary-300: #fa6f8b;
+    --color-primary-400: #fe859b;
+    --color-primary-500: #ff9bab;
+    --color-primary-600: #ffafbb;
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100: #121212;
+    --color-surface-200: #282828;
+    --color-surface-300: #3f3f3f;
+    --color-surface-400: #575757;
+    --color-surface-500: #717171;
+    --color-surface-600: #8b8b8b;
+    /** CSS DARK THEME MIXED SURFACE COLORS */
+    --color-surface-mixed-100: #7a2b3d;
+    --color-surface-mixed-200: #8a4250;
+    --color-surface-mixed-300: #9a5964;
+    --color-surface-mixed-400: #a97078;
+    --color-surface-mixed-500: #b8878d;
+    --color-surface-mixed-600: #c79ea3;
+
   }
 
-  a:hover {
-      color: #747bff;
-  }
-
-  button {
-      background-color: #f9f9f9;
-  }
 }
