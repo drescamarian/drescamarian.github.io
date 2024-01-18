@@ -22,7 +22,7 @@
 .about a {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: brown;
+    color: rgb(168, 168, 168);
 }
 
 .about a:hover {

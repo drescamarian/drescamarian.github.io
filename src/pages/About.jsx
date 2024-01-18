@@ -1,5 +1,5 @@
-import "../css/About.css"
-import loading from "../assets/1485.gif"
+import "../css/About.css";
+import loading from "../assets/1485.gif";
 
 function About() {
   return (
@@ -18,12 +18,12 @@ function About() {
         <ul>
           <h3>Skills</h3>
           <li>
-            Front-end Development: Proficient in HTML, CSS, JavaScript, and
+            Front-end Development: Proficient in HTML, CSS, SCSS, JavaScript, and
             modern front-end frameworks like React.
           </li>
           <li>
             Back-end Development: Experienced in server-side programming with
-            Node.js Bun. Familiar with databases such as MySQL and MongoDB.
+            Node.js and Bun. Familiar with databases such as MySQL and MongoDB.
           </li>
           <li>
             Full Stack Development: Skilled in developing end-to-end web
@@ -39,27 +39,55 @@ function About() {
             teams.
           </li>
         </ul>
-        <h3>Experience</h3>
-        <p>In progress... <img src={loading} alt="loading" /> </p>
+        <h2>Experience</h2>
+        <ul>
+          <li>DCI Digital Careere Institute</li>
+          <li>Namastec </li>
+        </ul>
         <h3>Education</h3>
-        <p>In progress...<img src={loading} alt="loading" /> expected end of october 2023</p>
+        <p>DCI Digital Careere Institute GmbH </p>
         <h3>Projects</h3>
-        <p>In progress... <img src={loading} alt="loading" /></p>
-        <h3>Contact</h3>
-        <a href="/contact">Shea my contact details</a>
+        <ul>
+          <li>Kultur Ausstellungsplattform mit NAMASTEC </li>
+          <li>Quiz Game</li>
+          <li>Weather App</li>
+          <li>Todo App</li>
+          <li>Calculator</li>
+        </ul>
+        <h3>
+          Contact: <a href="/contact">Shea my contact details</a>
+        </h3>
         <p>
           I'm excited about collaborating on new projects and leveraging my
           skills to create innovative web solutions. Let's connect and discuss
           how we can work together!
         </p>
-        <h3>Resume</h3>
-        <p>Download my resume</p>
-        <a href="/assets/Lebenslauf_von_Dresca.pdf">HERE !!!</a>
+        <h2>Resume</h2>
+        <p>
+          View my resume: <a href="/resume">Heare !!!</a>
+        </p>
+
         <p>Or read it below</p>
         <ul>
-          <li><a href="/home">Try my front end skills</a></li>
-          <li><a href="https://replit.com/@drescamarian/SimpleQuiz?s=app" target="_blank" >Try my console game</a></li>
-          <li><a href="https://github.com/drescamarian" target="_blank">For future projects ...</a></li>
+        <li>
+            <a href="https://kulturinblick.onrender.com/" target="_blank">View my front and backend skills</a>
+          </li>
+          <li>
+            <a href="/home">View my front end skills</a>
+          </li>
+          <li>
+            <a
+              href="https://replit.com/@drescamarian/SimpleQuiz?s=app"
+              target="_blank"
+            >
+              Try my console game
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/drescamarian" target="_blank">
+              For future projects ...
+            </a>
+          </li>
         </ul>
       </div>
     </section>
